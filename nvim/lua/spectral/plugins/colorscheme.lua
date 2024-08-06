@@ -5,7 +5,7 @@ return {
 
 require("onedarkpro").setup({
   colors = {
-    dark = { bg = "#202020" }, -- changed to darker background  
+    dark = { bg = "#181818" }, -- changed to darker background  
   }
 })
 
