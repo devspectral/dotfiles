@@ -1,6 +1,7 @@
 return { 
   "vimwiki/vimwiki",
   event = "BufEnter *.md",
+  keys = {"<leader>ww", "<leader>wt"},
    init = function() 
         vim.g.vimwiki_list = {
             {
@@ -9,6 +10,5 @@ return {
             ext = '.md',
             },
         }
-        vim.g.vimwiki_ext2syntax = { }
     end,
     } 
