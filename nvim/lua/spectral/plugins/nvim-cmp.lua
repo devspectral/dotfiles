@@ -20,6 +20,17 @@ return {
 
     local luasnip = require("luasnip")
 
+    vim.keymap.set({"i"}, "<c-k>", function() luasnip.expand() end, {silent = true})
+    vim.keymap.set({"i", "s"}, "<c-l>", function() luasnip.jump( 1) end, {silent = true})
+    vim.keymap.set({"i", "s"}, "<c-j>", function() luasnip.jump(-1) end, {silent = true})
+
+    vim.keymap.set({"i", "s"}, "<c-e>", function()
+      if luasnip.choice_active() then
+        luasnip.change_choice(1)
+      end
+    end, {silent = true})
+
+
     local lspkind = require("lspkind")
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)

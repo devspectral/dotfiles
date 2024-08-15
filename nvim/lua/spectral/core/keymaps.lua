@@ -22,6 +22,11 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- Move current selection up down left right
+keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current selection down" })
+keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current selection up" })
+
+
 -- vimwiki (disabling for now: conflict with telescope)
 
 -- keymap.set("n", "<C-Space>", "<cmd>VimwikiToggleListItem<CR>", { desc = "Toggle List Item Todo"}) -- Toggle todo list item vimwiki
