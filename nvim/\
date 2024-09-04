@@ -4,9 +4,11 @@ return {
 	config = function()
 		require("onedarkpro").setup({
 			colors = {
-				dark = { bg = "#181818" },
+				onedark = { bg = "#FFFF00" }, -- yellow
+				onelight = { bg = "#00FF00" }, -- green
 			},
 		})
+
 		vim.cmd("colorscheme onedark")
 	end,
 }
