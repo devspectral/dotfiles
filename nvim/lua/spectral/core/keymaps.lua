@@ -4,7 +4,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- Example keymap (not changing this for now) (ex. below will change i to jk)
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
@@ -26,7 +26,5 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current selection down" })
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current selection up" })
 
-
 -- vimwiki (disabling for now: conflict with telescope)
-
 -- keymap.set("n", "<C-Space>", "<cmd>VimwikiToggleListItem<CR>", { desc = "Toggle List Item Todo"}) -- Toggle todo list item vimwiki
