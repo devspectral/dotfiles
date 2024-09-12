@@ -90,6 +90,7 @@ return {
 					capabilities = capabilities,
 					filetypes = {
 						"html",
+						"javascript",
 						"typescriptreact",
 						"javascriptreact",
 						"css",
@@ -108,6 +109,7 @@ return {
 							-- make the language server recognize "vim" global
 							diagnostics = {
 								globals = { "vim" },
+								disable = { "missing-fields" },
 							},
 							completion = {
 								callSnippet = "Replace",

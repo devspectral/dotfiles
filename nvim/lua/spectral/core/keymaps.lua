@@ -27,4 +27,5 @@ keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current selection down" 
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current selection up" })
 
 -- vimwiki (disabling for now: conflict with telescope)
+
 -- keymap.set("n", "<C-Space>", "<cmd>VimwikiToggleListItem<CR>", { desc = "Toggle List Item Todo"}) -- Toggle todo list item vimwiki
