@@ -44,8 +44,8 @@ return {
 				"stylua", -- lua formatter
 				"black", -- python formatter
 				"isort",
-				"eslint_d",
 				"flake8",
+				"eslint_d",
 			},
 		})
 	end,

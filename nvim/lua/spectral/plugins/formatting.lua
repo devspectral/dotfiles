@@ -23,7 +23,7 @@ return {
 			},
 			format_on_save = function(bufnr)
 				-- Disable autoformat on certain filetypes
-				local ignore_filetypes = { "python" }
+				local ignore_filetypes = { "python", "javascript" }
 				if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
 					return
 				end
