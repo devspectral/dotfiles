@@ -14,6 +14,7 @@ return {
 			terminal_mappings = true,
 			start_in_insert = true,
 			close_on_exit = true,
-		},
+			size = 60,
+        }
 	},
 }

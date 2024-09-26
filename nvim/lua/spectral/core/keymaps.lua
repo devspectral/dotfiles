@@ -26,5 +26,13 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current selection down" })
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current selection up" })
 
+--toggleterm
+keymap.set("t", "<esc>", [[<C-\><C-n>]])
+keymap.set("t", "jk", [[<C-\><C-n>]])
+keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]])
+keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]])
+keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]])
+keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]])
+keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])
 -- vimwiki (disabling for now: conflict with telescope)
 -- keymap.set("n", "<C-Space>", "<cmd>VimwikiToggleListItem<CR>", { desc = "Toggle List Item Todo"}) -- Toggle todo list item vimwiki
