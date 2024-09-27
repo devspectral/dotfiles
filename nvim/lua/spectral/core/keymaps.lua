@@ -26,7 +26,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current selection down" })
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move current selection up" })
 
---toggleterm
+-- toggleterm
 keymap.set("t", "<esc>", [[<C-\><C-n>]])
 keymap.set("t", "jk", [[<C-\><C-n>]])
 keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]])
@@ -34,5 +34,21 @@ keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]])
 keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]])
 keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]])
 keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])
+
+-- delete single character without copying into register
+keymap.set('n', 'x', '"_x')
+
+-- delete highlighted characters without copying into register
+keymap.set('v', 'x', '"_d')
+
+-- mapping ; instead of : for command mode
+keymap.set({"n", "x"}, ";", ":", {noremap = true, desc = "Command mode"})
+
+-- Save
+keymap.set({"", "!"}, "<C-s>", "<ESC>:w!<CR>", {noremap = true, desc = "Save"})
+
+-- Quit and exit without saving
+keymap.set({"", "!"}, "<C-q>q", "<ESC>:qa!<CR>", {noremap = true, desc = "Quit and exit without saving"})
+
 -- vimwiki (disabling for now: conflict with telescope)
 -- keymap.set("n", "<C-Space>", "<cmd>VimwikiToggleListItem<CR>", { desc = "Toggle List Item Todo"}) -- Toggle todo list item vimwiki
