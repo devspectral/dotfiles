@@ -35,3 +35,6 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true -- split vertical window to right
 opt.splitbelow = true -- split horizontal window to bottom
+
+-- scroll
+opt.scrolloff = 15
