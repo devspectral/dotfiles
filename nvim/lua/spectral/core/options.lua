@@ -1,6 +1,8 @@
+
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
+local o = vim.o
 
 opt.relativenumber = true
 opt.number = true
@@ -12,7 +14,23 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 opt.wrap = true
-opt.textwidth = 85
+opt.textwidth = 80
+
+
+-- Text behaviour
+-- o.formatoptions = o.formatoptions
+--                    + 't'    -- auto-wrap text using textwidth
+--                    + 'c'    -- auto-wrap comments using textwidth
+--                    + 'r'    -- auto insert comment leader on pressing enter
+--                    - 'o'    -- don't insert comment leader on pressing o
+--                    + 'q'    -- format comments with gq
+--                    - 'a'    -- don't autoformat the paragraphs (use some formatter instead)
+--                    + 'n'    -- autoformat numbered list
+--                    - '2'    -- I am a programmer and not a writer
+--                    + 'j'    -- Join comments smartly
+o.formatoptions = o.formatoptions .. 'tcrqnjw'
+
+
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
