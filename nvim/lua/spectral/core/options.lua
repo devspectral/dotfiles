@@ -1,4 +1,3 @@
-
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
@@ -29,8 +28,7 @@ opt.textwidth = 80
 --                    - '2'    -- I am a programmer and not a writer
 --                    + 'j'    -- Join comments smartly
 o.formatoptions = o.formatoptions .. 'tcrqnjw'
-
-
+opt.fillchars = { eob = " "}
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
