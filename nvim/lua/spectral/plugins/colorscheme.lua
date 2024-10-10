@@ -19,7 +19,8 @@ return {
 		require("nordic").setup({
 			on_palette = function(palette)
 				palette.black1 = "#181818"
-                palette.blue2 = palette.white0
+                palette.blue2 = "#BBC3D4"
+                palette.black0 = "#3B4252"
 			end,
 			-- Enable italic comments.
 			italic_comments = true,
