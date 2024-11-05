@@ -45,7 +45,7 @@ keymap.set('v', 'x', '"_d')
 keymap.set({"n", "x"}, ";", ":", {noremap = true, desc = "Command mode"})
 
 -- Save
-keymap.set({"", "!"}, "<C-s>", "<ESC>:w!<CR>", {noremap = true, desc = "Save"})
+-- keymap.set({"", "!"}, "<C-s>", "<ESC>:w!<CR>", {noremap = true, desc = "Save"})
 
 -- Quit and exit without saving
 keymap.set({"", "!"}, "<C-q>q", "<ESC>:qa!<CR>", {noremap = true, desc = "Quit and exit without saving"})
