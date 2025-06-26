@@ -1,4 +1,4 @@
-return {
+	return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
@@ -73,7 +73,7 @@ return {
 
     -- Change the Diagnostic symbols in the sign column (gutter)
     vim.diagnostic.config({
-        virtual_text = true,
+        virtual_text = false,
         signs = {
             text = {
                 [vim.diagnostic.severity.ERROR] = ' ',

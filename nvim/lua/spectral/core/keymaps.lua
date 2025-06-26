@@ -42,7 +42,7 @@ keymap.set('n', 'x', '"_x')
 keymap.set('v', 'x', '"_d')
 
 -- mapping ; instead of : for command mode
-keymap.set({"n", "x"}, ";", ":", {noremap = true, desc = "Command mode"})
+-- keymap.set({"n", "x"}, ";", ":", {noremap = true, desc = "Command mode"})
 
 -- Save
 -- keymap.set({"", "!"}, "<C-s>", "<ESC>:w!<CR>", {noremap = true, desc = "Save"})

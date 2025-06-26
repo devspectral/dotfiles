@@ -27,14 +27,15 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
-				"ts_ls",
 				"html",
 				"cssls",
+                "ts_ls",
 				"tailwindcss",
 				"lua_ls",
 				"emmet_ls",
 				"pyright",
 				"gopls",
+                "rust_analyzer",
 			},
 		})
 
@@ -45,7 +46,6 @@ return {
 				"black", -- python formatter
 				"isort",
 				"flake8",
-				"eslint_d",
 			},
 		})
 	end,
